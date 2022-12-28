@@ -13,8 +13,6 @@ import { setupListeners } from "@reduxjs/toolkit/query";
 import type { Action } from "@reduxjs/toolkit";
 import nepApi from "./services";
 
-// import authReducer, { sliceKey as authKey } from "./features/auth/authSlice";
-
 const appReducer = combineReducers({
   // [authKey]: authReducer,
   [nepApi.reducerPath]: nepApi.reducer,
